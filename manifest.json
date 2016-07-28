@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "ItcastFeedback",
+  "description": "传智播客反馈系统查看插件",
+  "version": "1.1",
+  "permissions": [
+    "file://*"
+  ],
+  "browser_action": {
+    "default_icon": "icon1.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "file://*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "js": [
+        "jquery.min.js",
+        "echarts.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
